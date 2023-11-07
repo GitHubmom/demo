@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- La déclaration <!DOCTYPE> doit être la toute première chose dans 
+    votre document HTML, avant la balise <html>. 
+-->
+<html lang="fr">
+<!-- L'attribut lang spécifie la langue du contenu de l'élément. 
+        Les exemples courants sont "en" pour l'anglais 
+-->
+
+<head>
+    <!-- La spécification HTML5 encourage les développeurs Web à utiliser 
+        le jeu de caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Balise de titre
+	- Est censé être une description précise et concise du contenu d'une page
+	- Partie importante de l'optimisation des moteurs de recherche : créer des balises de titre descriptives et chargées de mots clés (chargées-> fortement chargées) pour le classement des moteurs de recherche
+	- gardez vos titres sous 60 caractères
+ -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/incons/apple-touch-icon.png">
+    <link rel="icon" type="/img/inconsimage/png" sizes="32x32" href="/img/incons/favicon-32x32.png">
+    <link rel="icon" type="/img/inconsimage/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/img/incons/site.webmanifest">
+    <link rel="mask-icon" href="/img/incons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Café Coffee Buzz - Moncton, N.B.</title>
+    <link href="../css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="../css/coffeebuzz.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+        header
+                La balise (élément) header  est généralement utilisée pour
+                regrouper un ensemble d'éléments h1-h6 pour baliser une page
+                titre avec son sous-titre ou son slogan. Commun
+                le contenu inclut le nom du site, le nom de l'entreprise,
+                logo, etc...
+
+        -->
+    <header>
+        <h1>Café Coffee Buzz</h1>
+        <p>Fournissez toute la caféine dont vous
+            avez besoin pour alimenter votre vie
+        </p>
+    </header>
+    <!-- nav>a*3 -->
+    <!-- L'élément HTML <nav> représente une section d'une page ayant 
+        des liens vers d'autres pages ou des fragments de cette page. 
+        Autrement dit, c'est une section destinée à la navigation dans un 
+        document (avec des menus, des tables des matières, des index, etc.).
+     -->
+    <nav>
+        <!-- <a href="#" title="">ACCUEIL</a> | -->
+        <!-- <a href="#" title="voir notre menu">MENU </a> | -->
+        <!-- <a href="#" title="comment nous contacter">CONTACTER </a> | -->
+        <!-- <a href="#" title="à propos de nous">À PROPOS</a> -->
+
+        <ul>
+            <li><a href="index.html" title="">ACCUEIL </a></li>
+            <li><a href="#" title="voir notre menu">MENU </a></li>
+            <li><a href="#" title="comment nous contacter">CONTACTER</a></li>
+            <li><a href="#" title="à propos de nous">À PROPOS</a></li>
+        </ul>
+    </nav>
+    <!--
+    main
+    La balise (élément) main représente la zone de contenu principale d'un document, qui inclut le contenu unique à ce document et exclut le contenu répété dans un ensemble de documents, tels que les liens de navigation du site, les informations sur les droits d'auteur, les logos et bannières du site et les formulaires de recherche ( sauf si la fonction principale du document ou de l'application est celle d'un formulaire de recherche).
+    Il ne doit pas y avoir plus d'un élément principal visible dans un document
+    -->
+
+    <main>
+
+    <section>
+        <h2>Demande d'emploi</h2>
+        <form action="#" method="POST" name="form-emploi"
+        id="form-emploi">
+        <fieldset>
+            <legend>
+                Informations personnelles
+            </legend>
+            <p>
+                <label for="prenom">prénom</label>
+                <input type="text" name="prenom"
+                id="prenom"
+                placeholder="veillez entrer votre preénom"
+                required>
+            </p>
+            <p>
+                <label for="nom">nom</label>
+                <input type="text" name="nom"
+                id="nom"
+                placeholder="veillez entrer votre nom"
+                required>
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email"
+                id="email"
+                placeholder="veillez entrer votre email"
+                required>
+            </p>
+            <p>
+                <label for="cellulaire">cellulaire</label>
+                <input type="tel" name="cellulaire"
+                id="cellulaire"
+                placeholder="veillez entrer votre cellulaire">
+            </p>
+            <p>
+                <label for="adresse">adresse</label>
+                <input type="text" name="adresse"
+                id="adresse"
+                placeholder="veillez entrer votre adresse"
+                required>
+            </p>
+            <p>
+                <label for="ville">ville</label>
+                <input type="text" name="ville"
+                id="ville"
+                placeholder="veillez entrer votre ville"
+                required>
+            </p>
+            <p>
+                <label for="province">Province:</label>
+                <select name="province" id="province">
+                    <option value="#">veuillez choisir une province</option>
+                    <option value="NB">Nouveau Brunswick</option>
+                    <option value="QC">Québec</option>
+                    <option value="NE">Nouvelle-Écorce</option>
+                    <option value="PE">Ile-de-prince-Edouard</option>
+
+                </select>
+            </p>
+            <p>
+                <label for="codepostal">code postal</label>
+                <input type="text" name="ville"
+                id="codepostal"
+                placeholder="veillez entrer votre code postal"
+                required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Informations sur l'emploi
+            </legend>
+            <p>
+                <label>lieux de travail:</label>
+            </p>
+            <p>
+                <input type="checkbox" name="lieu" id="lieu_moncton"
+                value="Moncton" checked>Moncton
+                <input type="checkbox" name="lieu" id="lieu_saint-jean"
+                value="Saint-Jean">Saint-Jean
+            </p>
+            <p>
+                <label>postes:</label>
+            </p>
+            <p>
+                <input type="checkbox" name="postes" id="poste_1"
+                value="Associé" >Associé
+                
+            </p>
+            <p>
+                <input type="checkbox" name="postes" id="poste_2"
+                value="Directeur">Directeur
+                
+            </p>
+            <p>
+                <input type="checkbox" name="postes" id="poste_3"
+                value="Supersiveur" >Superviseur
+                
+            </p>
+            <p>
+                <input type="checkbox" name="postes" id="poste_4"
+                value="Directeur-adjoint" >Directeur-adjoint
+                
+            </p>
+            <p>
+                <input type="checkbox" name="postes" id="poste_5"
+                value="Gérant" >Gérant
+                
+            </p>
+
+            <p>
+                <label>Type:</label>
+            </p>
+            <p>
+                <input type="radio" name="type"
+                id="temps-plein" value="temps-plein"
+                checked>temps-plein
+                <input type="radio" name="type"
+                id="temps-partiel" value="temps-partiel"
+                checked>temps-partiel
+            </p>
+            <p>
+                <label for="deDisponible">Date de disponibilté
+
+                </label>
+            </p>
+            <p>
+                <input type="date" name="dateDisponible"
+                id="dateDisponible" required>
+            </p>
+
+            <input type="submit" id="soumettre"
+            name="soumettre"  value="soumettre">
+           <p>
+                <label for="entenduDe">comment avez vous entendu parler de nous?
+
+                </label>
+            </p>
+            <select name="entenduDe" id="entenduDe">
+                <option value="coffeebuzz">Site Web Coffee Buzz</option>
+                <option value="journal">journal</option>
+                <option value="indeed">indeed</option>
+                <option value="Université de moncton">université de moncton</option>
+                <option value="Marketplace">marketplace</option>
+
+            </select>
+
+        </fieldset>
+    </section>
+
+
+        <aside>
+            <h2>Pour apprendre plus</h2>
+            <ul>
+                <li><a href="" title="decouvrez notre Salon">Salon </a></li>
+                <li><a href="#" title="Carrieres.html">Carrieres </a></li>
+                <li><a href="" title="voir notre menu">Bulletin </a></li>
+                <li><a href="" title="voir notre menu">ommerce équyuitable</a></li>
+            </ul>
+
+        </aside>
+
+
+    </main>
+    <!-- La balise footer (élément) représente le "pied de page" de
+ un document ou une section d'un document. Généralement le
+ le pied de page contient les informations de copyright, une adresse de contact,
+ liens vers les conditions d'utilisation et liens vers d'autres
+ documents connexes. -->
+    <footer>
+        <p>
+            <em>Copyright &copy; 2023 CoffeeBuzz</em>
+        </p>
+    </footer>
+</body>
+
+</html>

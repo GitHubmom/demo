@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- La déclaration <!DOCTYPE> doit être la toute première chose dans 
+    votre document HTML, avant la balise <html>. 
+-->
+<html lang="fr">
+<!-- L'attribut lang spécifie la langue du contenu de l'élément. 
+        Les exemples courants sont "en" pour l'anglais 
+-->
+
+<head>
+    <!-- La spécification HTML5 encourage les développeurs Web à utiliser 
+        le jeu de caractères UTF-8 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Balise de titre
+	- Est censé être une description précise et concise du contenu d'une page
+	- Partie importante de l'optimisation des moteurs de recherche : créer des balises de titre descriptives et chargées de mots clés (chargées-> fortement chargées) pour le classement des moteurs de recherche
+	- gardez vos titres sous 60 caractères
+ -->
+
+ <link rel="apple-touch-icon" sizes="180x180" href="/img/incons/apple-touch-icon.png">
+<link rel="icon" type="/img/inconsimage/png" sizes="32x32" href="/img/incons/favicon-32x32.png">
+<link rel="icon" type="/img/inconsimage/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+<link rel="manifest" href="/img/incons/site.webmanifest">
+<link rel="mask-icon" href="/img/incons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Café Coffee Buzz - Moncton, N.B.</title>
+</head>
+
+<body>
+    <!--
+        header
+                La balise (élément) header  est généralement utilisée pour
+                regrouper un ensemble d'éléments h1-h6 pour baliser une page
+                titre avec son sous-titre ou son slogan. Commun
+                le contenu inclut le nom du site, le nom de l'entreprise,
+                logo, etc...
+
+        -->
+    <header>
+        <h1>Café Coffee Buzz</h1>
+        <p>Fournissez toute la caféine dont vous
+            avez besoin pour alimenter votre vie
+        </p>
+    </header>
+    <!-- nav>a*3 -->
+    <!-- L'élément HTML <nav> représente une section d'une page ayant 
+        des liens vers d'autres pages ou des fragments de cette page. 
+        Autrement dit, c'est une section destinée à la navigation dans un 
+        document (avec des menus, des tables des matières, des index, etc.).
+     -->
+    <nav>
+        <!-- <a href="#" title="">ACCUEIL</a> | -->
+        <!-- <a href="#" title="voir notre menu">MENU </a> | -->
+        <!-- <a href="#" title="comment nous contacter">CONTACTER </a> | -->
+        <!-- <a href="#" title="à propos de nous">À PROPOS</a> -->
+
+        <ul>
+            <li><a href="index.html" title="">ACCUEIL </a></li>
+            <li><a href="#" title="voir notre menu">MENU </a></li>
+            <li><a href="#" title="comment nous contacter">CONTACTER</a></li>
+            <li><a href="#" title="à propos de nous">À PROPOS</a></li>
+        </ul>
+    </nav>
+    <!--
+    main
+    La balise (élément) main représente la zone de contenu principale d'un document, qui inclut le contenu unique à ce document et exclut le contenu répété dans un ensemble de documents, tels que les liens de navigation du site, les informations sur les droits d'auteur, les logos et bannières du site et les formulaires de recherche ( sauf si la fonction principale du document ou de l'application est celle d'un formulaire de recherche).
+    Il ne doit pas y avoir plus d'un élément principal visible dans un document
+    -->
+    <main>
+       
+
+
+    <main>
+          <!-- table>thead>tr>th*5 -->
+          <!-- Emmet docummentation pour voir la documentation-->
+          <table border="1"> 
+             <!-- border cestpour les bordure mais on le fera avec css -->
+            <thead>
+                <tr>
+                    <th colspan="2">poste</th>
+                    <th>Type</th>
+                    <th>Moncton</th>
+                    <th>Saint Jean</th>
+                
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>
+                        <a href="application.html" title="le formulaire">Associé </a>
+                    </td>
+                    <td>temps plein</td>
+                    <td>oui</td>
+                    <td>non</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Directeur</td>
+                    <td>temps plein</td>
+                    <td>non</td>
+                    <td>oui</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Superviseur</td>
+                    <td>temps partiel</td>
+                    <td>non</td>
+                    <td>oui</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Directeur adjoint</td>
+                    <td>temps plein</td>
+                    <td>non</td>
+                    <td>oui</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Gerant</td>
+                    <td>temps plein</td>
+                    <td>non</td>
+                    <td>oui</td>
+                </tr>
+                
+              
+            </tbody>
+            
+        </table>
+
+    <aside>
+        <h2>Pour apprendre plus</h2>
+        <ul> 
+            <li><a href="" title="decouvrez notre Salon">Salon </a></li>
+            <li><a href="#" title="Carrieres.html">Carrieres </a></li>
+            <li><a href="" title="voir notre menu">Bulletin </a></li>
+            <li><a href="" title="voir notre menu">ommerce équyuitable</a></li>
+        </ul>
+        
+    </aside>
+
+
+</main>
+<!-- La balise footer (élément) représente le "pied de page" de
+ un document ou une section d'un document. Généralement le
+ le pied de page contient les informations de copyright, une adresse de contact,
+ liens vers les conditions d'utilisation et liens vers d'autres
+ documents connexes. -->
+<footer>
+    <p>
+        <em>Copyright &copy; 2023 CoffeeBuzz</em>
+    </p>
+</footer>
+    </body>
+    </html>
